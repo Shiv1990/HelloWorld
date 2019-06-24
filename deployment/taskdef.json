@@ -2,7 +2,7 @@
   "family": "sampleapp-taskdef",
   "containerDefinitions": [
       {
-          "image": "729769420771.dkr.ecr.us-east-1.amazonaws.com/sampleapp",
+          "image": "729769420771.dkr.ecr.us-east-1.amazonaws.com/sampleapp:17",
           "name": "sampleapp",
           "cpu": 10,
           "memory": 256,
