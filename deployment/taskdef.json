@@ -1,0 +1,18 @@
+{
+  "family": "sampleapp-taskdef",
+  "containerDefinitions": [
+      {
+          "image": "729769420771.dkr.ecr.us-east-1.amazonaws.com/sampleapp:%BUILD_NUMBER%",
+          "name": "sampleapp",
+          "cpu": 10,
+          "memory": 256,
+          "essential": true,
+          "portMappings": [
+              {
+                  "containerPort": 9009,
+                  "hostPort": 80
+              }
+          ]
+      }
+  ]
+}
