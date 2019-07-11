@@ -9,6 +9,5 @@
             "containerPort": 9009
         }
     ],
-    "desiredCount": 1,
-    "role": "ecsInstanceRole"
+    "desiredCount": 1
 }
