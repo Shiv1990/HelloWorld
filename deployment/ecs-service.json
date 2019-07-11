@@ -1,0 +1,14 @@
+{
+    "cluster": "sampleapp-cluster",
+    "serviceName": "sampleapp-service",
+    "taskDefinition": "sampleapp-taskdef:69",
+    "loadBalancers": [
+        {
+            "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:729769420771:targetgroup/sampleapp-tg/34ad13ec2b68ebb9",
+            "containerName": "web",
+            "containerPort": 9009
+        }
+    ],
+    "desiredCount": 1,
+    "role": "ecsServiceRole"
+}
