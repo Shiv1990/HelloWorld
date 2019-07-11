@@ -1,10 +1,12 @@
 {
   "family": "sampleapp-taskdef",
+  "networkMode": "bridge",
+  "memory": "300",
   "containerDefinitions": [
       {
           "image": "729769420771.dkr.ecr.us-east-1.amazonaws.com/sampleapp:%BUILD_NUMBER%",
           "name": "sampleapp",
-          "cpu": 10,
+          "cpu": 0,
           "memory": 256,
           "essential": true,
           "portMappings": [
@@ -14,5 +16,8 @@
               }
           ]
       }
-  ]
+  ],
+  "requiresCompatibilities": [
+    "EC2"
+]
 }
