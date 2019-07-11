@@ -5,7 +5,7 @@
     "loadBalancers": [
         {
             "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:729769420771:targetgroup/sampleapp-tg/34ad13ec2b68ebb9",
-            "containerName": "web",
+            "containerName": "sampleapp",
             "containerPort": 9009
         }
     ],
